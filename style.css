@@ -12,27 +12,49 @@
   display: none;
 }
 
-
 /* Caption text */
-.text {
+.content {
   color: #ffffff;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 40px;
+  font-size: 36px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  width: 90%;
+  text-align: left;
+  background: #000066;
+}
+
+/* Caption text */
+.title {
+  color: #ffffff;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 8px 12px;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* Caption description */
+.description {
+  color: #000000;
+  /* opacity: 0.5; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 28;
+  font-weight: normal;
+  margin-top: 0px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
-  width: 75%;
-  text-align: center;
-  background: #000066;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.9);
 }
 
 
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 3.0s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 3.0s;
 }
 
 @-webkit-keyframes fade {

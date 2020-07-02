@@ -3,7 +3,6 @@ $page = $_SERVER['PHP_SELF'];
 $sec = "900";
 ?>
 
-
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
   <meta http-equiv="refresh" content="<?php echo $sec?>;URL='<?php echo $page?>'">
@@ -30,9 +29,12 @@ function getFeed($feed_url) {
 ?>    	
       <div class="mySlides fade">
         <img src="<?php echo "$image" ?>" style="width:100%">
-        <div class="text"><?php echo "$entry->title" ?></div>
+      <div class="content">
+        <div class="title"><?php echo "$entry->title"?></div>
+        <div class="description"><?php echo "$entry->description" ?></div>
       </div>
-  <?php
+      </div>
+ <?php
         $i +=1;
 }
 }
